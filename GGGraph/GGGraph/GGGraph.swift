@@ -67,12 +67,12 @@ open class GGGraph<VertexType: Equatable>: CustomStringConvertible, Sequence, Co
     /// Find all of the neighbors of a given Vertex.
     ///
     /// - parameter vertex: The vertex to find the neighbors of.
-    /// - returns: An oprional array the neighbor vertices.
-    public func neighborsForVertex(_ vertex: VertexType) -> [VertexType]? {
+    /// - returns: An array of the neighbor vertices.
+    public func neighborsForVertex(_ vertex: VertexType) -> [VertexType] {
         if let i = indexOfVertex(vertex) {
             return neighborsForIndex(i)
         }
-        return nil
+        return [VertexType]()
     }
     
     /// Find all of the edges of a vertex at a given index.
