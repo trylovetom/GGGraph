@@ -12,6 +12,11 @@
 		4E6239671DF887D200AA0867 /* GGEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6239661DF887D200AA0867 /* GGEdge.swift */; };
 		4E6239691DF887F000AA0867 /* GGGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6239681DF887F000AA0867 /* GGGraph.swift */; };
 		4E62396B1DF91C5900AA0867 /* GGUnweightedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62396A1DF91C5900AA0867 /* GGUnweightedGraph.swift */; };
+		4EA738D61E065AF200867168 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA738D51E065AF200867168 /* SwiftyJSON.swift */; };
+		4EA738DA1E065C0A00867168 /* d3.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EA738D81E065C0A00867168 /* d3.js */; };
+		4EA738DB1E065C0A00867168 /* graph.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EA738D91E065C0A00867168 /* graph.html */; };
+		4EA738DD1E065F0E00867168 /* data.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EA738DC1E065F0E00867168 /* data.json */; };
+		4EA738DF1E06720700867168 /* TopKCliqueSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA738DE1E06720700867168 /* TopKCliqueSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +29,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4EA738D71E065BE000867168 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4EA738DD1E065F0E00867168 /* data.json in CopyFiles */,
+				4EA738DA1E065C0A00867168 /* d3.js in CopyFiles */,
+				4EA738DB1E065C0A00867168 /* graph.html in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +50,11 @@
 		4E6239661DF887D200AA0867 /* GGEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGEdge.swift; sourceTree = "<group>"; };
 		4E6239681DF887F000AA0867 /* GGGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGGraph.swift; sourceTree = "<group>"; };
 		4E62396A1DF91C5900AA0867 /* GGUnweightedGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGUnweightedGraph.swift; sourceTree = "<group>"; };
+		4EA738D51E065AF200867168 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		4EA738D81E065C0A00867168 /* d3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = d3.js; path = GGGraph/d3.js; sourceTree = "<group>"; };
+		4EA738D91E065C0A00867168 /* graph.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = graph.html; path = GGGraph/graph.html; sourceTree = "<group>"; };
+		4EA738DC1E065F0E00867168 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = data.json; path = GGGraph/data.json; sourceTree = "<group>"; };
+		4EA738DE1E06720700867168 /* TopKCliqueSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopKCliqueSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +71,9 @@
 		4E62394B1DF87F9900AA0867 = {
 			isa = PBXGroup;
 			children = (
+				4EA738DC1E065F0E00867168 /* data.json */,
+				4EA738D81E065C0A00867168 /* d3.js */,
+				4EA738D91E065C0A00867168 /* graph.html */,
 				4E6239561DF87F9900AA0867 /* GGGraph */,
 				4E6239551DF87F9900AA0867 /* Products */,
 			);
@@ -66,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				4E6239571DF87F9900AA0867 /* main.swift */,
+				4EA738D51E065AF200867168 /* SwiftyJSON.swift */,
+				4EA738DE1E06720700867168 /* TopKCliqueSearch.swift */,
 				4E6239661DF887D200AA0867 /* GGEdge.swift */,
 				4E6239641DF8830E00AA0867 /* GGUnweightedEdge.swift */,
 				4E6239681DF887F000AA0867 /* GGGraph.swift */,
@@ -84,6 +111,7 @@
 				4E6239501DF87F9900AA0867 /* Sources */,
 				4E6239511DF87F9900AA0867 /* Frameworks */,
 				4E6239521DF87F9900AA0867 /* CopyFiles */,
+				4EA738D71E065BE000867168 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -133,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA738DF1E06720700867168 /* TopKCliqueSearch.swift in Sources */,
 				4E62396B1DF91C5900AA0867 /* GGUnweightedGraph.swift in Sources */,
 				4E6239691DF887F000AA0867 /* GGGraph.swift in Sources */,
 				4E6239581DF87F9900AA0867 /* main.swift in Sources */,
+				4EA738D61E065AF200867168 /* SwiftyJSON.swift in Sources */,
 				4E6239671DF887D200AA0867 /* GGEdge.swift in Sources */,
 				4E6239651DF8830E00AA0867 /* GGUnweightedEdge.swift in Sources */,
 			);
